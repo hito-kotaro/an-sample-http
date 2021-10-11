@@ -1,6 +1,12 @@
+# 対象の指定(インベントリファイルで指定した名前)
 - hosts: server
+
+  # 管理者権限で実行
   become: true
+
+  # 以下に実際の操作を記述していく
   tasks:
+
     # パッケージの更新
     - name: updated yum
       yum:
