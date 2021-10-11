@@ -13,6 +13,12 @@ $ ansible --version
 $ sudo yum install git -y
 ```
 
+## deploy secret key
+From local pc
+```
+$ scp -i <secretkey> <secretkey> ec2-user@<IP ADDRESS>:~/.ssh
+```
+
 ## git clone
 
 ```zsh
